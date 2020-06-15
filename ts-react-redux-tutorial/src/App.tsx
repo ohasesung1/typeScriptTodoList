@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CounterContainer from './containers/CounterContainers';
+import TodoInsert from './components/TodoInsert';
+import TodoList from './components/TodoList';
+
 
 function App() {
   return (
-    <CounterContainer/>
+    <>
+      <TodoInsert />
+      <TodoList />
+    </>
   );
 }
 
