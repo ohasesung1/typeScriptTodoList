@@ -1,5 +1,3 @@
-import { act } from "react-dom/test-utils";
-
 // 액션 타입 
 const ADD_TODO = 'todos/ADD_TODO' as const;
 const TOGGLE_TODO = 'todos/TOGGLE_TODO' as const;
@@ -14,7 +12,7 @@ export const addTodo = (text: string) => ({
 export const toggleTodo = (id: number) => ({
   type: TOGGLE_TODO,
   payload: id
-}); 
+});
 
 export const removeTodo = (id: number) => ({
   type: REMOVE_TODO,
@@ -31,7 +29,7 @@ type TodosAction =
 export type Todo = {
   id: number;
   text: string;
-  done: boolean;
+  done: boolean;  
 };
 
 type TodosState = Todo[];
